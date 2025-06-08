@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urganch raqamli texnologiyalari texnikumi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    
+    <style>
+        .card-hover {
+           cursor: pointer;
+           transition: transform 0.3s;
+        }
+        .card-hover:hover {
+           transform: scale(1.05);
+        }
+        /* Navbar'dagi tushuvchi menyu (dropdown) uchun maxsus uslub, agar kerak bo'lsa */
+        /*
+        .navbar-nav .dropdown-menu {
+            background-color: #fff; // Tushuvchi menyularning foni
+            border: 1px solid rgba(0,0,0,.15); // Chegara
+            box-shadow: 0 .5rem 1rem rgba(0,0,0,.175); // Soya
+        }
+        .navbar-nav .dropdown-menu .dropdown-item {
+            color: #000; // Tushuvchi menyu elementlarining matn rangi
+        }
+        .navbar-nav .dropdown-menu .dropdown-item:hover {
+            background-color: #e9ecef; // Hover holatida fon rangi
+        }
+        */
+    </style>
+</head>
+<body class="d-flex flex-column h-100" style="background-color: #f1f5fe;">
+    <nav class="navbar navbar-expand-lg shadow-sm text-dark" style="background-color: #fff;">
+        <div class="container-fluid" style="max-width:1400px;">
+            <a href="" class="navbar-brand">
+                <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                        <img src="img/logo.png" alt="" width="100" height="52">
+                    </div>
+                    <div class="flex-grow-1 ms-2 text-wrap fs-6 fw-bold" style="width: 13rem; color: #000;">
+                        Urganch raqamli texnologiyalari texnikumi
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel" style="color: #fff;">Menyu</h5> <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button> </div>
+                <div class="offcanvas-body"> <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Texnikum haqida
+                            </a>
+                            <ul class="dropdown-menu"> 
+                                <li>
+                                    <a href="#" class="dropdown-item">Texnikum nizomi</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-item">Raxbariyat</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Qabul
+                            </a>
+                            <ul class="dropdown-menu"> 
+                                <li><a href="#" class="dropdown-item">Hujjat topshirish yo`riqnomasi</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle text-white" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Yo'nalishlar
+                            </a>
+                            <ul class="dropdown-menu"> 
+                                <li><a href="9sinf.html" class="dropdown-item">9-sinflar uchun</a></li>
+                                <li><a href="11sinf.html" class="dropdown-item">11-sinflar uchun</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto"> <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-dark" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Texnikum haqida
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Texnikum nizomi</a></li>
+                            <li><a href="#" class="dropdown-item">Raxbariyat</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-dark" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Qabul
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Hujjat topshirish yo`riqnomasi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle text-dark" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Yo'nalishlar
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="9sinf.html" class="dropdown-item">9-sinflar uchun</a></li>
+                            <li><a href="11sinf.html" class="dropdown-item">11-sinflar uchun</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="flex-shrink-0">
+        <div class="container-fluid" style="max-width:1400px;">
+            <div class="album py-5">
+                <h3>Yangiliklar</h3>
+                <hr>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col mb-3">
+                        <a href="https://www.gazeta.uz/oz/2023/12/20/it-services/" class="text-decoration-none text-reset">
+                            <div class="card h-100 border-0 shadow-sm card-hover">
+                                <img src="img/1.jpg" alt="" class="bd-placeholder-img card-img-top img-fluid responsive-img">
+                                <div class="card-body p-4 pb-0">
+                                    <p class="fw-bold">
+                                        2024-yilda IT xizmatlarini rivojlantirish uchun 65 mlrd so‘m ajratiladi
+                                    </p>
+                                    <p style="text-align: justify;">
+                                        2024-yildan IT kompaniyalari bo‘sh turgan binolarga bir yil muddatga bepul joylashtiriladi...
+                                    </p>
+                                </div>
+                                <div class="p-4 pt-0 d-flex justify-content-between align-items-center mt-auto">
+                                    <span style="color: #870405;"> 20.12.2023</span>
+                                    <a href="https://www.gazeta.uz/oz/2023/12/20/it-services/" style="color: #870405; text-decoration: none;"> Batafsil</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col mb-3">
+                        <a href="https://daryo.uz/2024/08/13/prezident-masullarga-suniy-intellekt-texnologiyalari-markazini-tashkil-qilish-boyicha-topshiriq-berdi" class="text-decoration-none text-reset">
+                            <div class="card h-100 border-0 shadow-sm card-hover">
+                                <img src="img/2.jpg" alt="" class="bd-placeholder-img card-img-top img-fluid responsive-img">
+                                <div class="card-body p-4 pb-0">
+                                    <p class="fw-bold">
+                                         Prezident masʼullarga sunʼiy intellekt texnologiyalari markazini tashkil qilish bo‘yicha topshiriq berdi 
+                                    </p>
+                                    <p style="text-align: justify;">
+                                        Prezident Shavkat Mirziyoyev 13-avgust kuni sun’iy intellekt va IT sohasidagi startap loyihalarni...
+                                    </p>
+                                </div>
+                                <div class="p-4 pt-0 d-flex justify-content-between align-items-center mt-auto">
+                                    <span style="color: #870405;"> 13.08.2024</span>
+                                    <a href="https://daryo.uz/2024/08/13/prezident-masullarga-suniy-intellekt-texnologiyalari-markazini-tashkil-qilish-boyicha-topshiriq-berdi" style="color: #870405; text-decoration: none;"> Batafsil</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col mb-3">
+                        <a href="https://www.gazeta.uz/oz/2022/07/29/digitalization/" class="text-decoration-none text-reset">
+                            <div class="card h-100 border-0 shadow-sm card-hover">
+                                <img src="img/3.jpg" alt="" class="bd-placeholder-img card-img-top img-fluid responsive-img">
+                                <div class="card-body p-4 pb-0">
+                                    <p class="fw-bold">
+                                        «IT kasblarni egallash yoshlar o‘rtasida trendga aylandi» — Shavkat Mirziyoyev
+                                    </p>
+                                    <p style="text-align: justify;">
+                                        Prezident Shavkat Mirziyoyev juma kuni IT-mutaxassislar bilan uchrashib, mas’ul rahbarlarga internet qamrovi...
+                                    </p>
+                                </div>
+                                <div class="p-4 pt-0 d-flex justify-content-between align-items-center mt-auto">
+                                    <span style="color: #870405;"> 29.07.2022</span>
+                                    <a href="https://www.gazeta.uz/oz/2022/07/29/digitalization/" style="color: #870405; text-decoration: none;"> Batafsil</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col mb-3">
+                        <a href="https://digital.uz/oz/news/view/35320" class="text-decoration-none text-reset">
+                            <div class="card h-100 border-0 shadow-sm card-hover">
+                                <img src="img/4.jpg" alt="" class="bd-placeholder-img card-img-top img-fluid responsive-img">
+                                <div class="card-body p-4 pb-0">
+                                    <p class="fw-bold">
+                                        IT, moliyaviy xizmatlar, turizm, aviatsiya, ta’lim va tibbiyot sohalarida “katta sakrash” bo‘ldi – Prezident
+                                    </p>
+                                    <p style="text-align: justify;">
+                                        Prezident Shavkat Mirziyoyev raisligida xizmat ko‘rsatish sohalarini rivojlantirish bo‘yicha...
+                                    </p>
+                                </div>
+                                <div class="p-4 pt-0 d-flex justify-content-between align-items-center mt-auto">
+                                    <span style="color: #870405;"> 07.02.2025</span>
+                                    <a href="https://digital.uz/oz/news/view/35320" style="color: #870405; text-decoration: none;"> Batafsil</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col mb-3">
+                        <a href="https://raqobat.gov.uz/uz/prezident-raqamli-texnologiyalar-sohasidagi-natijalar-va-rejalar-bilan-tanishdi/" class="text-decoration-none text-reset">
+                            <div class="card h-100 border-0 shadow-sm card-hover">
+                                <img src="img/5.jpg" alt="" class="bd-placeholder-img card-img-top img-fluid responsive-img">
+                                <div class="card-body p-4 pb-0">
+                                    <p class="fw-bold">
+                                        Prezident raqamli texnologiyalar sohasidagi natijalar va rejalar bilan tanishdi
+                                    </p>
+                                    <p style="text-align: justify;">
+                                        Raqamli boshqaruv markazida “O‘zbekiston–2030” strategiyasiga muvofiq amalga oshirilayotgan...
+                                    </p>
+                                </div>
+                                <div class="p-4 pt-0 d-flex justify-content-between align-items-center mt-auto">
+                                    <span style="color: #870405;"> 05.08.2024</span>
+                                    <a href="https://raqobat.gov.uz/uz/prezident-raqamli-texnologiyalar-sohasidagi-natijalar-va-rejalar-bilan-tanishdi/" style="color: #870405; text-decoration: none;"> Batafsil</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col mb-3">
+                        <a href="https://daryo.uz/2024/05/16/ozbekistonda-it-shaharchalar-tashkil-etiladi" class="text-decoration-none text-reset">
+                            <div class="card h-100 border-0 shadow-sm card-hover">
+                                <img src="img/6.jpg" alt="" class="bd-placeholder-img card-img-top img-fluid responsive-img">
+                                <div class="card-body p-4 pb-0">
+                                    <p class="fw-bold">
+                                        O‘zbekistonda IT-shaharchalar tashkil etiladi - Prezident qarori
+                                    </p>
+                                    <p style="text-align: justify;">
+                                        “Hududlarda yoshlarga raqamli texnologiyalar va xorijiy tillarni o‘rganish uchun...
+                                    </p>
+                                </div>
+                                <div class="p-4 pt-0 d-flex justify-content-between align-items-center mt-auto">
+                                    <span style="color: #870405;">16.05.2024 </span>
+                                    <a href="https://daryo.uz/2024/05/16/ozbekistonda-it-shaharchalar-tashkil-etiladi" style="color: #870405; text-decoration: none;"> Batafsil</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col mb-3">
+                        <a href="https://daryo.uz/2023/02/23/ozbekistonda-it-trendi-yosh-dasturchilarga-qanday-imkoniyatlar-yaratilmoqda" class="text-decoration-none text-reset">
+                            <div class="card h-100 border-0 shadow-sm card-hover">
+                                <img src="img/7.jpg" alt="" class="bd-placeholder-img card-img-top img-fluid responsive-img">
+                                <div class="card-body p-4 pb-0">
+                                    <p class="fw-bold">
+                                         O‘zbekistonda IT trendi: yosh dasturchilarga qanday imkoniyatlar yaratilmoqda? 
+                                    </p>
+                                    <p style="text-align: justify;">
+                                        Bugun axborot texnologiyalari (IT) kasblarini egallash nafaqat dunyoda, balki o‘zbekistonlik yoshlar...
+                                    </p>
+                                </div>
+                                <div class="p-4 pt-0 d-flex justify-content-between align-items-center mt-auto">
+                                    <span style="color: #870405;"> 23.02.2023</span>
+                                    <a href="https://daryo.uz/2023/02/23/ozbekistonda-it-trendi-yosh-dasturchilarga-qanday-imkoniyatlar-yaratilmoqda" style="color: #870405; text-decoration: none;"> Batafsil</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <h3>Foydali havolalar</h3>
+            <hr>
+            <div class="row mb-5">
+                <div class="col-md-4">
+                    <div class="mb-3 bg-white p-4 shadow-sm rounded-3 card-hover">
+                        <a href="https://uztelecom.uz/" class="text-decoration-none text-reset">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <img src="img/13.jpg" alt="" width="100" height="100">
+                                </div>
+                                <div class="flex-grow-1 ms-3 text-start">
+                                    <p>Uztelecom</p>
+                                    <span style="color: #870405;">
+                                         https://uztelecom.uz/
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3 bg-white p-4 shadow-sm rounded-3 card-hover">
+                        <a href="https://gov.uz/" class="text-decoration-none text-reset">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <img src="img/12.jpg" alt="" width="100" height="100">
+                                </div>
+                                <div class="flex-grow-1 ms-3 text-start">
+                                    <p>Yagona interaktiv davlat xizmatlari portali</p>
+                                    <span style="color: #870405;">
+                                          https://my.gov.uz/
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3 bg-white p-4 shadow-sm rounded-3 card-hover">
+                        <a href="https://gov.uz/" class="text-decoration-none text-reset">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <img src="img/11.jpg" alt="" width="100" height="100">
+                                </div>
+                                <div class="flex-grow-1 ms-3 text-start">
+                                    <p>O‘zbekiston Respublikasi Raqamli texnologiyalar vazirligi</p>
+                                    <span style="color: #870405;">
+                                          https://digital.gov.uz/oz
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3 bg-white p-4 shadow-sm rounded-3 card-hover">
+                        <a href="https://gov.uz/" class="text-decoration-none text-reset">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <img src="img/10.png" alt="" width="100" height="100">
+                                </div>
+                                <div class="flex-grow-1 ms-3 text-start">
+                                    <p>Uzinfocom (IT xizmatlar operatori)</p>
+                                    <span style="color: #870405;">
+                                          https://uzinfocom.uz/
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3 bg-white p-4 shadow-sm rounded-3 card-hover">
+                        <a href="https://gov.uz/" class="text-decoration-none text-reset">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <img src="img/9.jpg" alt="" width="100" height="100">
+                                </div>
+                                <div class="flex-grow-1 ms-3 text-start">
+                                    <p>UZCERT (kiberxavfsizlik)</p>
+                                    <span style="color: #870405;">
+                                          https://uzcert.uz/
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mb-3 bg-white p-4 shadow-sm rounded-3 card-hover">
+                        <a href="https://gov.uz/" class="text-decoration-none text-reset">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <img src="img/8.jpg" alt="" width="100" height="100">
+                                </div>
+                                <div class="flex-grow-1 ms-3 text-start">
+                                    <p>One ID (Yagona identifikatsiya)</p>
+                                    <span style="color: #870405;">
+                                          https://id.egov.uz/oz
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer mt-auto text-white py-3" style="background-color: #fff;">
+        <div class="container-fluid pt-5 pb-3" style="max-width:1400px;"> 
+            <div class="row text-dark">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center">
+                        <div class="flex-shrink-0">
+                            <img src="img/logo.png" alt="" class="flex-shrink-0 me-3 mb-3" width="190" height="132">
+                        </div>
+                        <div class="flex-grow-1">
+                            <h5 class="fw-bold text-center-md">
+                                Urganch raqamli texnologiyalar texnikumi
+                            </h5>
+                        </div>
+                    </div>
+                    <p style="text-align: justify;">
+                        O'zbekistonning raqamli transformatsiyasida faol ishtirok etishni xohlaysizmi? Raqamli texnologiyalar texnikumi sizga IT sohasida chuqur bilimlar va amaliy ko'nikmalarni berib, o'zgarishlarning dvigateli bo'lishingizga yordam beradi.
+                    </p>
+                    <hr>
+                    <h5 class="fw-bold mt-4">Ijtimoiy tarmoq</h5>
+                    <ul class="nav mb-3">
+                        <li><a class="btn text-dark" href="https://t.me/Urganch_RTT_UZ"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+  <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+</svg> Telegram</a></li>
+                        <li><a class="btn text-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg> Instagram</a></li>
+                        <li><a class="btn text-dark" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+</svg> Youtube</a></li>
+                    </ul>
+                    <hr class="mb-3 d-lg-none d-lg-block">
+                </div>
+                <div class="col-lg-3">
+                        <h5 class="fw-bold"><i class="fa-solid fa-phone-flip" width="32" height="32"></i> Telefon raqam</h5>
+                        <ul class="mb-3">
+                        <li>+998 (62) 228-51-60</li>
+                        <li>+998 (90) 725-56-01</li>
+                        <li>+998 (91) 421-56-26</li>
+                        </ul>
+                        <hr>
+                        <h5 class="fw-bold"><i class="fa-solid fa-location-dot" width="32" height="32"></i> Manzil</h5>
+                        <p> 
+                            Xorazm viloyati, Urganch shahri, Tinchlik ko'chasi 6-uy
+                        </p>
+                    </div>
+                    <div class="col-lg-5 img-fluid">
+                    <div style="position: relative;">
+                        <div style="position: relative; padding-bottom: 75%; height: 0; overflow: hidden;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.5144400445847!2d60.61995547650801!3d41.55810948538752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x41dfc92c3cd5cbbb%3A0x5b9855ac28d46299!2sIT%20TEXNIKUM!5e0!3m2!1suz!2s!4v1749329131606!5m2!1suz!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    </body>
+</html>
